@@ -1,4 +1,4 @@
-Design_New.pde generates various designs using recursion.
+Patterns_New.pde generates various designs using recursion. Needs refactoring.
 
 Samples below:
 
