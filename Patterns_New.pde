@@ -144,85 +144,87 @@ void drawShape(float[] coordinates, String shapeType, int designType){
     if(shapeType == "circ"){ellipse(x, y, height, height);}
     else{rect(x, y, height, height);}
     
-    if (width > 8 && height > 8) {
+    if (width > 8 && height > 8) { 
+    switch(designType){
          
-      if(designType == 1){
+   case 1:
        drawShape(recurRight, shapeType, designType);
        drawShape(recurLeft, shapeType, designType);
        drawShape(recurDown, shapeType, designType);
        drawShape(recurUp, shapeType, designType);      
-    }
+    break;
     
-    if(designType == 2){
+    case 2:
       drawShape(recurRight, shapeType, designType);
       drawShape(recurLeft, shapeType, designType);
       drawShape(recurDown, shapeType, designType);
-    }
+    break;
     
-    if(designType == 3) {
+    case 3: 
       drawShape(recurRight, shapeType, designType);
       drawShape(recurLeft, shapeType, designType);
       drawShape(recurUp, shapeType, designType);
-    }
+    break;
     
-     if(designType == 4) {
+     case 4: 
       drawShape(recurRight, shapeType, designType);
       drawShape(recurLeft, shapeType, designType);     
-    }
+    break;
     
-     if(designType == 5){
+     case 5:
       drawShape(recurDown, shapeType, designType);
       drawShape(recurUp, shapeType, designType);
-    }
+    break;
     
-     if(designType == 6){
+     case 6:
       drawShape(recurDown, shapeType, designType);    
-    }
+    break;
     
-     if(designType == 7){
+     case 7:
       drawShape(recurUp, shapeType, designType);    
-    }  
+    break; 
 
-    if(designType == 8){
+    case 8: 
       drawShape(recurRight, shapeType, designType);
       drawShape(recurDown, shapeType, designType);
       drawShape(recurUp, shapeType, designType);
-      
-    }
+      break;
     
-    if(designType == 9){
+    case 9: 
       drawShape(recurRight, shapeType, designType);
       drawShape(recurDown, shapeType, designType);
-    }
+    break;
     
-    if(designType == 10){
+    case 10:
       drawShape(recurRight, shapeType, designType);
       drawShape(recurUp, shapeType, designType);    
-    }
+    break;
     
-    if(designType == 11){
+    case 11: 
       drawShape(recurRight, shapeType, designType);    
-    }
+    break;
     
-    if(designType == 12){
+    case 12:
       drawShape(recurLeft, shapeType, designType);
       drawShape(recurDown, shapeType, designType);
       drawShape(recurUp, shapeType, designType); 
-    }
+    break;
     
-    if(designType == 13){
+    case 13:
       drawShape(recurLeft, shapeType, designType);
       drawShape(recurDown, shapeType, designType);
-    }
+    break;
     
-    if(designType == 14){
+    case 14:
       drawShape(recurLeft, shapeType, designType);
       drawShape(recurUp, shapeType, designType);
-    }
+    break;
     
-     if(designType == 15){
+     case 15:
       drawShape(recurLeft, shapeType, designType);    
-    }  
+    break; 
+    
+      }
       
  }
     
